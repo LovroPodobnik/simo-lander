@@ -1,15 +1,28 @@
-# SIMO - Crypto Protection
+# SIMO - Solana Token Validation System
 
-SIMO is an advanced security layer that protects crypto assets from meme token scams and risky transactions with an interactive landing page.
+SIMO is a comprehensive security and validation system for Solana tokens designed to detect potentially unsafe tokens through a multi-phase pipeline. The system combines on-chain data analysis, market metrics, and social signals to provide a holistic token safety assessment.
 
 ![SIMO Landing Page](https://placeholder-for-screenshot.com)
 
-## Features
+## Core Functionality
 
-- 🛡️ Advanced security layer for crypto assets
-- 🚫 Automatic detection and blocking of risky transactions 
-- 💼 Real-time asset protection dashboard
-- 🌐 Interactive blockchain visualization
+- 🛡️ **Token Validation Pipeline**: Three-phase validation process (Safety, Market, Security)
+- 🚫 **Advanced Detection Mechanisms**: Bundle analysis, insider trading detection, transfer pattern analysis
+- 💼 **Market Analysis Tools**: Integration with Jupiter and DEX Screener for market metrics
+- 🌐 **Social Media Validation**: Analysis of social metrics correlated with on-chain activities
+
+## Technical Architecture
+
+### Infrastructure
+- WebSocket Monitoring with Syndica and Helius APIs
+- Rate-Limited API Integration
+- SQLite Database for historical data
+- Real-time Web Dashboard with interactive visualization
+
+### Performance Features
+- Configurable retry mechanisms
+- Caching to reduce redundant API calls
+- Background workers for asynchronous processing
 
 ## Getting Started
 
@@ -22,8 +35,8 @@ SIMO is an advanced security layer that protects crypto assets from meme token s
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/project-simo.git
-cd project-simo
+git clone https://github.com/LovroPodobnik/simo-lander.git
+cd simo-lander
 ```
 
 2. Install dependencies:
@@ -41,7 +54,7 @@ The application will be available at [http://localhost:3000](http://localhost:30
 ## Project Structure
 
 ```
-project-simo/
+simo-lander/
 ├── src/                        # Source code
 │   ├── index.html              # Main HTML file
 │   ├── components/             # UI components
@@ -68,10 +81,23 @@ project-simo/
 
 ## Technologies Used
 
-- Three.js - 3D visualization
+- TypeScript and Node.js
+- Three.js for 3D visualization
+- TailwindCSS for dashboard UI
+- External API integrations (Helius, Syndica, Jupiter, DEX Screener)
+- WebSocket support for real-time updates
 - Modern CSS with variables
 - Responsive design
 - Optimized for performance
+
+## Business Purpose
+
+SIMO helps:
+- Traders identify potential scam tokens before investing
+- Projects demonstrate their legitimacy through objective validation
+- Platforms verify the safety of tokens they support
+
+The system addresses common vulnerabilities in the Solana token ecosystem, including rug pulls, artificial price manipulation, and fraudulent project structures.
 
 ## License
 
