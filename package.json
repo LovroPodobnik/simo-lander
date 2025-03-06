@@ -1,0 +1,21 @@
+{
+  "name": "simo-landing-page",
+  "version": "1.0.0",
+  "description": "Advanced security layer for crypto assets",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server src -p 3000 -c-1",
+    "build": "mkdir -p dist && cp -r src/* dist/"
+  },
+  "keywords": [
+    "crypto",
+    "security",
+    "blockchain",
+    "defi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
